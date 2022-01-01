@@ -2,7 +2,7 @@
 Шаблон автоматизации для верстки
 
 ## Запуск проект в продакшн командой 
-'npm run build'
+<code>npm run build</code>
 
 ## Запуск проекта для разработки командой
-'npm run start'
+<code>npm run start</code>
