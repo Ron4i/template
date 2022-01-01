@@ -36,14 +36,14 @@ gulp.task("copy", function() {
   gulp.task("css", function () {
     return gulp.src("source/sass/style.scss")
       .pipe(plumber())
-      .pipe(sourcemap.init())
+      .pipe(sourcemaps.init())
       .pipe(sass())
       .pipe(postcss([
         autoprefixer()
       ]))
       .pipe(csso())
       .pipe(rename("style.min.css"))
-      .pipe(sourcemap.write("."))
+      .pipe(sourcemaps.write("."))
       .pipe(gulp.dest("build/css"))
       .pipe(server.stream());
   });
@@ -60,7 +60,7 @@ gulp.task("copy", function() {
   });
 
   gulp.task("images", function () {
-    return gulp.src("source/images/**/*.{png,jpg,jpeg,svg}")
+    return gulp.src("source/images/**/*")
       .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
