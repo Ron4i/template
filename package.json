@@ -1,0 +1,19 @@
+{
+  "name": "template.loc",
+  "version": "1.0.0",
+  "description": "Шаблон автоматизации для верстки",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ron4i/template.git"
+  },
+  "author": "Rinat Atnashev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ron4i/template/issues"
+  },
+  "homepage": "https://github.com/Ron4i/template#readme"
+}
